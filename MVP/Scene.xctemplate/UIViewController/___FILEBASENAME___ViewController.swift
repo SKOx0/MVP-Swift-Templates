@@ -8,21 +8,20 @@
 
 import UIKit
 
-class ___VARIABLE_sceneName___ViewController: UIViewController {
-    
+class ___VARIABLE_sceneName___ViewController: BaseViewController {
+
     // MARK: Outlets
-    
+
     // MARK: Injections
-    var presenter: ___VARIABLE_sceneName___PresenterInput!
-    var configurator: ___VARIABLE_sceneName___Configurable!
+    var presenter: ___VARIABLE_sceneName___PresenterInput {
+       return _presenter as! ___VARIABLE_sceneName___PresenterInput
+    }
 
     // MARK: View lifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        configurator.configure(viewController: self)
+
         presenter.viewDidLoad()
-        
     }
 
 }

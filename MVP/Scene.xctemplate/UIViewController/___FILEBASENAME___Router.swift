@@ -8,23 +8,11 @@
 
 import UIKit
 
-protocol ___VARIABLE_sceneName___Routable: ViewRoutable {
-    
+class ___VARIABLE_sceneName___Router : BaseRouter{
+
 }
 
-class ___VARIABLE_sceneName___Router {
-    
-    // MARK: Injections
-    weak var viewController: UIViewController?
-    
-    // MARK: LifeCycle
-    required init(viewController: UIViewController) {
-        self.viewController = viewController
-    }
-    
-}
+// MARK: - ___VARIABLE_sceneName___RouterProtocol
+extension ___VARIABLE_sceneName___Router: ___VARIABLE_sceneName___RouterProtocol {
 
-// MARK: - ___VARIABLE_sceneName___Routable
-extension ___VARIABLE_sceneName___Router: ___VARIABLE_sceneName___Routable {
-    
 }
